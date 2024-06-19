@@ -1,0 +1,10 @@
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\bin\Debug\ColorSwitchGame.exe.config
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\bin\Debug\ColorSwitchGame.exe
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\bin\Debug\ColorSwitchGame.pdb
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.GameForm.resources
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.Properties.Resources.resources
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.exe
+C:\Users\Asus\source\repos\ColorSwitchGame\ColorSwitchGame\obj\Debug\ColorSwitchGame.pdb

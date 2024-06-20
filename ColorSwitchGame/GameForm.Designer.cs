@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.scoreLabel = new System.Windows.Forms.Label();
+            this.PauseBtn = new System.Windows.Forms.Button();
+            this.StartBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // scoreLabel
@@ -41,11 +43,33 @@
             this.scoreLabel.TabIndex = 0;
             this.scoreLabel.Text = "label1";
             // 
+            // PauseBtn
+            // 
+            this.PauseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PauseBtn.Location = new System.Drawing.Point(644, 32);
+            this.PauseBtn.Name = "PauseBtn";
+            this.PauseBtn.Size = new System.Drawing.Size(125, 37);
+            this.PauseBtn.TabIndex = 1;
+            this.PauseBtn.Text = "button1";
+            this.PauseBtn.UseVisualStyleBackColor = true;
+            // 
+            // StartBtn
+            // 
+            this.StartBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartBtn.Location = new System.Drawing.Point(338, 207);
+            this.StartBtn.Name = "StartBtn";
+            this.StartBtn.Size = new System.Drawing.Size(125, 37);
+            this.StartBtn.TabIndex = 2;
+            this.StartBtn.Text = "button1";
+            this.StartBtn.UseVisualStyleBackColor = true;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StartBtn);
+            this.Controls.Add(this.PauseBtn);
             this.Controls.Add(this.scoreLabel);
             this.Name = "GameForm";
             this.Text = "GameForm";
@@ -57,6 +81,8 @@
         #endregion
 
         private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.Button PauseBtn;
+        private System.Windows.Forms.Button StartBtn;
     }
 }
 

@@ -39,16 +39,17 @@ namespace ColorSwitchGame
             StartBtn.Size = new Size(100, 50);
             StartBtn.Location = new Point((this.ClientSize.Width - StartBtn.Width) / 2,
                 (this.ClientSize.Height - StartBtn.Height) / 2);
-            StartBtn.Text = "Start";
+            StartBtn.Text = "Start ▶";
             StartBtn.ForeColor = Color.White;
             StartBtn.BackColor = Color.Orange;
             StartBtn.Click += StartButton_Click;
 
-            PauseBtn.Size = new Size(80, 40);
+            PauseBtn.Size = new Size(70, 40);
             PauseBtn.Location = new Point(this.ClientSize.Width - PauseBtn.Width - 10, 10);
-            PauseBtn.Text = "Pause";
+            PauseBtn.Text = "❚❚";
             PauseBtn.ForeColor = Color.White;
-            PauseBtn.BackColor = Color.Orange;
+            PauseBtn.BackColor = Color.FromArgb(40,40,40);
+            PauseBtn.FlatStyle = FlatStyle.Flat;
             PauseBtn.Click += PauseButton_Click;
             PauseBtn.Enabled = false;
 
@@ -81,13 +82,13 @@ namespace ColorSwitchGame
             if (isPaused)
             {
                 gameTimer.Start();
-                PauseBtn.Text = "Pause";
+                PauseBtn.Text = "❚❚";
                 isPaused = false;
             }
             else
             {
                 gameTimer.Stop();
-                PauseBtn.Text = "Resume";
+                PauseBtn.Text = "▶";
                 isPaused = true;
             }
 

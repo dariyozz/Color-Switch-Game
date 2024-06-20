@@ -9,8 +9,6 @@ namespace ColorSwitchGame
         private Timer gameTimer;
         private Scene scene;
         private int yOffset; // Offset to control the screen sliding
-        private Button startButton;
-        private Button pauseButton;
         private bool gameStarted;
         private bool isPaused;
 
@@ -37,31 +35,28 @@ namespace ColorSwitchGame
             this.BackColor = Color.FromArgb(40, 40, 40);
 
             // Initialize UI elements
-            startButton = new Button();
-            startButton.Size = new Size(100, 50);
-            startButton.Location = new Point((this.ClientSize.Width - startButton.Width) / 2,
-                (this.ClientSize.Height - startButton.Height) / 2);
-            startButton.Text = "Start";
-            startButton.ForeColor = Color.White;
-            startButton.BackColor = Color.Orange;
-            startButton.Click += StartButton_Click;
+           
+            StartBtn.Size = new Size(100, 50);
+            StartBtn.Location = new Point((this.ClientSize.Width - StartBtn.Width) / 2,
+                (this.ClientSize.Height - StartBtn.Height) / 2);
+            StartBtn.Text = "Start";
+            StartBtn.ForeColor = Color.White;
+            StartBtn.BackColor = Color.Orange;
+            StartBtn.Click += StartButton_Click;
 
-            pauseButton = new Button();
-            pauseButton.Size = new Size(80, 40);
-            pauseButton.Location = new Point(this.ClientSize.Width - pauseButton.Width - 10, 10);
-            pauseButton.Text = "Pause";
-            pauseButton.ForeColor = Color.White;
-            pauseButton.BackColor = Color.Orange;
-            pauseButton.Click += PauseButton_Click;
-            pauseButton.Enabled = false;
+            PauseBtn.Size = new Size(80, 40);
+            PauseBtn.Location = new Point(this.ClientSize.Width - PauseBtn.Width - 10, 10);
+            PauseBtn.Text = "Pause";
+            PauseBtn.ForeColor = Color.White;
+            PauseBtn.BackColor = Color.Orange;
+            PauseBtn.Click += PauseButton_Click;
+            PauseBtn.Enabled = false;
 
             
             scoreLabel.Location = new Point(10, 10);
             scoreLabel.Text = "0";
             scoreLabel.ForeColor = Color.White;
 
-            this.Controls.Add(startButton);
-            this.Controls.Add(pauseButton);
             this.Controls.Add(scoreLabel);
 
             gameStarted = false;
@@ -73,8 +68,8 @@ namespace ColorSwitchGame
             gameStarted = true;
             scene.ResetGame();
             gameTimer.Start();
-            startButton.Visible = false;
-            pauseButton.Enabled = true;
+            StartBtn.Visible = false;
+            PauseBtn.Enabled = true;
             this.ActiveControl = null; // Remove focus from button
             this.Focus(); // Focus back to the form for key events
         }
@@ -86,13 +81,13 @@ namespace ColorSwitchGame
             if (isPaused)
             {
                 gameTimer.Start();
-                pauseButton.Text = "Pause";
+                PauseBtn.Text = "Pause";
                 isPaused = false;
             }
             else
             {
                 gameTimer.Stop();
-                pauseButton.Text = "Resume";
+                PauseBtn.Text = "Resume";
                 isPaused = true;
             }
 
@@ -123,9 +118,9 @@ namespace ColorSwitchGame
             if (scene.IsGameOver)
             {
                 gameTimer.Stop();
-                startButton.Visible = true;
-                startButton.Text = "Restart";
-                pauseButton.Enabled = false;
+                StartBtn.Visible = true;
+                StartBtn.Text = "Restart";
+                PauseBtn.Enabled = false;
             }
         }
 
@@ -140,8 +135,8 @@ namespace ColorSwitchGame
                         scene.ResetGame(); // Reset the game when space is pressed after game over
                         yOffset = 0; // Reset yOffset
                         gameTimer.Start();
-                        startButton.Visible = false;
-                        pauseButton.Enabled = true;
+                        StartBtn.Visible = false;
+                        PauseBtn.Enabled = true;
                     }
                     else
                     {

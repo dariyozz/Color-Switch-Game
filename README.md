@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="mk">
-<head>
-    <meta charset="UTF-8">
-    <title>Документација за играта "Color Switch Game"</title>
-</head>
 <body>
     <h1>Документација за играта "Color Switch Game"</h1>
 

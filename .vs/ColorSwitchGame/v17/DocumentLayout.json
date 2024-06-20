@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\colorswitchgame\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|solutionrelative:colorswitchgame\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\colorswitchgame\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|solutionrelative:colorswitchgame\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\colorswitchgame\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|solutionrelative:colorswitchgame\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|c:\\users\\asus\\source\\repos\\colorswitchgame\\colorswitchgame\\gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|solutionrelative:colorswitchgame\\gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E908E2-EB6F-4421-9ED6-EF7A024E70A1}|ColorSwitchGame\\ColorSwitchGame.csproj|C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\colorswitchgame\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "GameForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\GameForm.Designer.cs",
+              "RelativeDocumentMoniker": "ColorSwitchGame\\GameForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\GameForm.Designer.cs",
+              "RelativeToolTip": "ColorSwitchGame\\GameForm.Designer.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T10:55:21.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Obstacle.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\Obstacle.cs",
               "RelativeDocumentMoniker": "ColorSwitchGame\\Obstacle.cs",
@@ -63,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Scene.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\Scene.cs",
               "RelativeDocumentMoniker": "ColorSwitchGame\\Scene.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\Scene.cs",
               "RelativeToolTip": "ColorSwitchGame\\Scene.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAIwAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T09:01:37.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\Ball.cs",
               "RelativeDocumentMoniker": "ColorSwitchGame\\Ball.cs",
@@ -89,20 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameForm.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\GameForm.cs",
               "RelativeDocumentMoniker": "ColorSwitchGame\\GameForm.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\GameForm.cs",
               "RelativeToolTip": "ColorSwitchGame\\GameForm.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHEAAABEAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAuwH8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T08:59:01.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GameForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ColorSwitchGame\\ColorSwitchGame\\GameForm.cs",
               "RelativeDocumentMoniker": "ColorSwitchGame\\GameForm.cs",

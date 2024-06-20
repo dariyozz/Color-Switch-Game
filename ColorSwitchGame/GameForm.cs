@@ -10,7 +10,9 @@ namespace ColorSwitchGame
         private Scene scene;
         private int yOffset; // Offset to control the screen sliding
         private Button startButton;
+        private Button pauseButton;
         private bool gameStarted;
+        private bool isPaused;
 
         public GameForm()
         {
@@ -37,22 +39,33 @@ namespace ColorSwitchGame
             // Initialize UI elements
             startButton = new Button();
             startButton.Size = new Size(100, 50);
-            startButton.Location = new Point((this.ClientSize.Width - startButton.Width) / 2, (this.ClientSize.Height - startButton.Height) / 2);
+            startButton.Location = new Point((this.ClientSize.Width - startButton.Width) / 2,
+                (this.ClientSize.Height - startButton.Height) / 2);
             startButton.Text = "Start";
             startButton.ForeColor = Color.White;
             startButton.BackColor = Color.Orange;
             startButton.Click += StartButton_Click;
 
-         
+            pauseButton = new Button();
+            pauseButton.Size = new Size(80, 40);
+            pauseButton.Location = new Point(this.ClientSize.Width - pauseButton.Width - 10, 10);
+            pauseButton.Text = "Pause";
+            pauseButton.ForeColor = Color.White;
+            pauseButton.BackColor = Color.Orange;
+            pauseButton.Click += PauseButton_Click;
+            pauseButton.Enabled = false;
+
+            
             scoreLabel.Location = new Point(10, 10);
             scoreLabel.Text = "0";
             scoreLabel.ForeColor = Color.White;
-           
 
             this.Controls.Add(startButton);
+            this.Controls.Add(pauseButton);
             this.Controls.Add(scoreLabel);
 
             gameStarted = false;
+            isPaused = false;
         }
 
         private void StartButton_Click(object sender, EventArgs e)
@@ -61,11 +74,36 @@ namespace ColorSwitchGame
             scene.ResetGame();
             gameTimer.Start();
             startButton.Visible = false;
-            this.Focus();
+            pauseButton.Enabled = true;
+            this.ActiveControl = null; // Remove focus from button
+            this.Focus(); // Focus back to the form for key events
+        }
+
+        private void PauseButton_Click(object sender, EventArgs e)
+        {
+            if (!gameStarted) return;
+
+            if (isPaused)
+            {
+                gameTimer.Start();
+                pauseButton.Text = "Pause";
+                isPaused = false;
+            }
+            else
+            {
+                gameTimer.Stop();
+                pauseButton.Text = "Resume";
+                isPaused = true;
+            }
+
+            this.ActiveControl = null; // Remove focus from button
+            this.Focus(); // Focus back to the form for key events
         }
 
         private void GameTimer_Tick(object sender, EventArgs e)
         {
+            if (isPaused) return;
+
             scene.Update();
 
             // Calculate yOffset based on the ball's position relative to the window's center
@@ -87,12 +125,13 @@ namespace ColorSwitchGame
                 gameTimer.Stop();
                 startButton.Visible = true;
                 startButton.Text = "Restart";
+                pauseButton.Enabled = false;
             }
         }
 
         private void GameForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (gameStarted)
+            if (gameStarted && !isPaused)
             {
                 if (e.KeyCode == Keys.Space)
                 {
@@ -102,6 +141,7 @@ namespace ColorSwitchGame
                         yOffset = 0; // Reset yOffset
                         gameTimer.Start();
                         startButton.Visible = false;
+                        pauseButton.Enabled = true;
                     }
                     else
                     {

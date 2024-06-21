@@ -1,4 +1,4 @@
-##Документација за играта "Color Switch Game"##
+<h1>Документација за играта "Color Switch Game"</h1>
 1. Објаснување на проблемот
 Опис на апликацијата
 "Color Switch Game" е забавна и предизвикувачка игра каде што играчот контролира топче кое постојано скока нагоре. Целта на играта е да се избегнат пречките и да се соберат што повеќе поени. Играчот може да го контролира скокот на топчето со притискање на тастерот "Space". Пречките имаат различни форми и движења, и играчот мора да ги избегне за да преживее.
@@ -64,7 +64,6 @@ public void Draw(Graphics g)
             }
         }
     }
-
     if (!ScoreObjectCollected)
     {
         using (GraphicsPath starPath = CreateStarPath(ScoreObject.X + ScoreObject.Width / 2,   
@@ -95,20 +94,15 @@ public bool CheckCollision(Ball ball)
 {
     float distance = (float)Math.Sqrt(Math.Pow(ball.X - Center.X, 2) + Math.Pow(ball.Y - Center.Y, 2));
     bool onPerimeter = Math.Abs(distance - Radius) <= PenWidth / 2;
-
     if (!onPerimeter)
     {
         return false;
     }
-
     float angleToBall = (float)(Math.Atan2(ball.Y - Center.Y, ball.X - Center.X) * 180 / Math.PI);
     angleToBall = (angleToBall + 360) % 360;
-
     float segmentAngle = 360f / Colors.Length;
     int segment = (int)((angleToBall - RotationAngle + 360) % 360 / segmentAngle);
-
     bool colorMatch = Colors[segment] == ball.Color;
-
     return !colorMatch;
 }
 Објаснување:
@@ -141,7 +135,7 @@ public bool CheckOutOfBounds(Ball ball)
 if (ball.Y + 10 > 1000): Проверува дали топчето е под дното на прозорецот (со мала маргина).
 return true; Враќа true ако топчето е надвор од границите.
 
-6. CheckScoreObjectCollision(Ball ball)
+7. CheckScoreObjectCollision(Ball ball)
 Оваа функција проверува дали топчето го собрало објектот за поени. Ако топчето е во рамките на објектот за поени, функцијата го означува објектот како собран и враќа true.
 
 public bool CheckScoreObjectCollision(Ball ball)

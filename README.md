@@ -26,7 +26,7 @@ GameForm: Самата класа на формата која ги содржи
 <h2>1. Конструктор: Obstacle(Point center, int radius, Color[] colors) </h2>
 Овој конструктор го иницијализира објектот на класата Obstacle со зададениот центар, радиус и бои. Исто така, го поставува аголот на ротација на нула и го креира објектот за поени кој играчот може да го собере.
 
-
+<code>
 public Obstacle(Point center, int radius, Color[] colors)
 {
     Center = center;
@@ -36,7 +36,7 @@ public Obstacle(Point center, int radius, Color[] colors)
     ScoreObject = new Rectangle(Center.X - 10, Center.Y - 10, 20, 20);
     ScoreObjectCollected = false;
 }
-
+</code>
 
 <h2>2. Update() </h2>
 Оваа функција ја ажурира пречката со зголемување на аголот на ротација. Ова значи дека пречката ќе ротира со секое повикување на оваа функција.
